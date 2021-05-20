@@ -1,0 +1,10 @@
+baseURL = "http://ethowatcher.com"
+languageCode = "pt-br"
+title = "EthoWatcher OpenSource:improving quality control and blind procedures during categorical and morphologic/kinematic extraction of behavioral data in laboratory animals"
+defaultContentLanguage = "pt-BR"
+
+
+[[menu.main]]
+    name = "Procedimento de operação padrão"
+    identifier = "POP"
+    url = "/POP/"

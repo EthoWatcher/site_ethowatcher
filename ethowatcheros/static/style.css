@@ -1,0 +1,58 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: .3fr 1fr 1fr 1fr .3fr;
+    grid-template-rows: .3fr 1.5fr .6fr;
+    grid-template-areas: "blk  head head head " "blk  main main main" "blk  footer footer footer";
+    font-size: 1.2em;
+    grid-gap: .2em;
+    padding: .2em 1.2em;
+}
+
+
+.header {
+    background-color: #fe9900;
+    grid-area: head;
+    border-radius: 25px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: .4fr 1fr;
+    grid-template-rows: .4fr 1fr;
+    grid-template-areas: "titulo nav_link" "titulo nav_link";
+
+}
+
+.header>#titulo {
+    grid-area: titulo;
+    text-align: left;
+    padding-left: 3em;
+    padding-bottom: 1em;
+}
+
+article {
+    grid-area: main;
+    padding: 1em 1.2em;
+    margin-top: .2em;
+    border-radius: 25px;
+}
+
+
+footer {
+    background-color: #fe9900;
+    grid-area: footer;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+
+
+.card_deck{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    margin: 10px ;
+}
