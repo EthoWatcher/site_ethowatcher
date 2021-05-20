@@ -7,22 +7,29 @@ body {
     font-size: 1.2em;
     grid-gap: .2em;
     padding: .2em 1.2em;
+    /* font-family: "Courier New"; */
 }
 
 
 .header {
-    background-color: #fe9900;
+    
     grid-area: head;
-    border-radius: 25px;
+    
     text-align: center;
     display: grid;
     grid-template-columns: .4fr 1fr;
-    grid-template-rows: .4fr 1fr;
-    grid-template-areas: "titulo nav_link" "titulo nav_link";
+    grid-template-rows:  1fr;
+    grid-template-areas: "logo titulo";
 
 }
 
-.header>#titulo {
+.logo{
+    text-align: center;
+    grid-area: logo;
+    background-color: #fe9900;
+}
+
+.titulo {
     grid-area: titulo;
     text-align: left;
     padding-left: 3em;
@@ -34,6 +41,8 @@ article {
     padding: 1em 1.2em;
     margin-top: .2em;
     border-radius: 25px;
+    
+    text-align: justify;
 }
 
 

@@ -1,0 +1,18 @@
+  
+{{ define "main" }}
+<main class="container-lg border-top">
+  <div class="pt-3">
+    <div class="row justify-content">
+      <div class="col col-lg-9">
+        {{.Content}}
+      </div>
+      <div class="col-md-auto">
+        <ul class="navbar-nav ml-auto flex-row toc-top">
+          <li class="nav-item active"><a class="nav-link" href="https://github.com/{{.Params.repo }}"><i class="fab fa-github"></i></a></li>
+          <li class="nav-item active"><a class="btn" data-clipboard-text="{{.Permalink}}"><i class="fas fa-link"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+{{end}}

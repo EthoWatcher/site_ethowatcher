@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        {{ partial "headers" . }}
+    </head>
+
+<body>
+    {{ partial "navbar" . }}
+    <article>
+    {{ block "main" . }}
+    
+    
+    {{ end }}
+    </article>
+
+
+    {{ partial "footer" . }}  
+
+</body>
+</html>
